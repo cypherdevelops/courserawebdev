@@ -1,0 +1,103 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-top: 55px;
+        margin-bottom: 50px;
+        font-size: 3.3em;
+        font-family: 'raleway';
+        font-weight: 900;
+        color: #3C3C3B;
+    }
+    
+    section {
+        width: 28%;
+        border: 4px solid;
+        border-radius: 18px;
+        float: left;
+        margin-left: 4%;
+        position: relative;
+        background-color: #ffffff;
+    }
+    
+    h2 {
+        height: 45px;
+        line-height: 45px;
+        width: 38%;
+        margin: 0;
+        font-size: 160%;
+        text-align: center;
+        font-family: 'Raleway';
+        font-weight: 800;
+        border-radius: 0px 10px 0px 10px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color: #ffffff;
+    }
+    
+    p {
+        color: #3C3C3B;
+        padding: 63px 30px 25px 30px;
+        margin: 0;
+        font-family: 'poppins';
+        font-size: 1em;
+        position: relative;
+        clear: right;
+    }
+    /* Color Variety Pass taken from the warning on the 14th requirement on github assignment-2
+    (I could easily make all borders black, but for the sake of a pleasing assignment to look into, 
+    I've decided to use some different soothing colors :) */
+    
+    #chicken-section {
+        border-color: #EE9D26;
+    }
+    
+    #beef-section {
+        border-color: #833523;
+    }
+    
+    #sushi-section {
+        border-color: #dd3745;
+    }
+    
+    .beef-h2 {
+        background-color: #833523;
+    }
+    
+    .chicken-h2 {
+        background-color: #EE9D26;
+    }
+    
+    .sushi-h2 {
+        background-color: #dd3745;
+    }
+    /********************* Medium Devices Design **********************/
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        section {
+            width: 45%;
+            margin-left: 3%;
+        }
+        #sushi-section {
+            clear: left;
+            margin: 3% 0 10% 3%;
+            width: 93%;
+        }
+    }
+    /********************** Small Devices Design *******************/
+    
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 3.13em;
+        }
+        section {
+            width: 80%;
+            margin: 0 10% 7% 10%;
+        }
+        #sushi-section {
+            margin-bottom: 20%;
+        }
+    }
